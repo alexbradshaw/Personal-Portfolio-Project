@@ -13,11 +13,20 @@ What did you learn?
 - Css sucks even more
 - I hate ux/ui
 - Can't wait to update this later
+
 ## Usage
 ![screenshot of pages](./screenshot.jpg?raw=true)
+
 ## Credits
 Trilogy Education
 Me
 Anthony Briglia and Tom Woods
+
 ## License
 creative commons
+
+## Links to finished project
+
+- https://alexbradshaw.github.io/Personal-Portfolio-Project/
+
+- https://github.com/alexbradshaw/Personal-Portfolio-Project
