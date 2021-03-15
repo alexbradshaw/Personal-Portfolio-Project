@@ -27,7 +27,7 @@ h1{
     justify-content: center;
 }
 
-.h2{
+h2{
     /* again planned on reusing it for all the different tabs on the about me section but it didn't end up looking right so I didn't switch it.  */
     position: relative;
     float: left;
@@ -72,7 +72,7 @@ div{
     padding-bottom: 5%;
 }
 
-.h3{
+h3{
     /* ended up creating a new setup for the h3 tag for "Projects". */
     position: relative;
     float: left;
