@@ -5,6 +5,8 @@
 
 }
 
+/* most code written mobile first */
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -12,9 +14,11 @@
     font-family: 'Open Sans', sans-serif;
     background-color: aliceblue;
     color: var(--gray);
+    /* overall page stylings. wanted a color not white but not overbearing */
 }
 
 h1{
+    /* first header on aboutme.html. it is literally just my name. Originally I was going to use it for every page but felt it was tacky so I ended up switching to different headers so I could style them in case I wanted to reuse it*/
     display: flex;
     font-weight: 700;
     font-size: 40px; 
@@ -23,7 +27,8 @@ h1{
     justify-content: center;
 }
 
-h2{
+.h2{
+    /* again planned on reusing it for all the different tabs on the about me section but it didn't end up looking right so I didn't switch it.  */
     position: relative;
     float: left;
     font-size: 20px;
@@ -32,6 +37,7 @@ h2{
 }
 
 .vl {
+    /* this is my code for the small bars next to About Me and Projects. */
     display: flex;
     border-left: 6px solid black;
     height: 10px;
@@ -40,6 +46,7 @@ h2{
 
 
 .para1{
+    /* This is the class for the about me text. */
     font-size: 12px;
     margin-left: 25%;
     margin-right: 5%;
@@ -48,21 +55,25 @@ h2{
 }
 
 .nav{
+    /* nav bar code to make it stick to the right */
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
 
 .nav a{
+    /* nav bar code to add a little bit of spacing between each a tag. */
     padding: 12px;
 }
 
 div{
+    /* a fat line break cause no other solutions were working for me. really happy with how well it worked. */
    display: block;
     padding-bottom: 5%;
 }
 
-h3{
+.h3{
+    /* ended up creating a new setup for the h3 tag for "Projects". */
     position: relative;
     float: left;
     font-size: 20px;
@@ -71,6 +82,7 @@ h3{
 }
 
 .vp {
+    /* needed a slightly different class for the small black bar next to the About Me and Projects headers. */
     display: flex;
     border-left: 6px solid black;
     height: 10px;
@@ -78,6 +90,7 @@ h3{
 }
 
 .para2{
+    /* This code was honestly the most time consuming part of it. I was going to change it but I really am proud of it even though it was a pain in the ass.  */
     color: transparent;
     font-size: 12px;
     margin-left: 21.5%;
@@ -90,6 +103,7 @@ h3{
 } 
 
 .pog{
+    /* smaller boxes under the big main one. Didn't have any content for them but they were premade so it was easy. */
     display: flex;
     flex-wrap: nowrap;
     color: transparent;
@@ -106,32 +120,33 @@ h3{
 
 
 .para2:hover{
+    /* hover code for the big box. Makes the text below visible*/
     color: var(--gray);
     background-image: none;
 }
 
-.para2:hover + a{
-    display: block;
-}
-
 h4{
+    /* code for contact me page. */
     display: flex;
     justify-content: center;
     font-size: 50px;
 }
 
 h5{
+    /* main index header code. */
     display: flex;
     justify-content: center;
     font-size: 25px; 
 }
 
 h6{
+    /* caption for the big projects box */
     padding-left: 21.5%;
     font-size: 12px;
 }
 
 .para3{
+    /* code for the captions next to the picture on contactme.html */
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -141,18 +156,17 @@ h6{
 }
 
 img{
+    /* beautiful picture of me with a lobster and my friend */
    height: 100px;
    padding-left:10% ;
    float: left;
 }
 
-#top{
-    padding-top: 10%;
-}
-
 .spacing{
     padding-left: 2px;
 }
+
+/* media query for medium sized screens such as tablets */
 
 @media only screen and (min-width: 600px) {
 
@@ -205,6 +219,8 @@ img{
     }
         }
         
+
+/* media query for big screens */
 
   @media only screen and (min-width: 1300px) {
 
